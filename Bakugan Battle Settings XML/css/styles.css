@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Genos&display=swap');
+
+
+body {
+    font-family: 'Genos'; /* Добавлен новый шрифт Genos */
+    font-weight: Regular;
+    margin: 0;
+    padding: 0;
+}
+
+
+.pre_page {
+    font-size: 50px; 
+    margin-left:  15%;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.page {
+    width: 70%;
+    background-color: #d9d9d9;
+    border-radius: 17px;
+    position: flex;
+    display: flex;
+    flex-direction: column; 
+    margin-left:  15%;
+    margin-bottom: 4%;
+}
+.page_block_constants {
+    width: 94%;
+    background-color: #aeaeae;
+    border-radius: 17px;
+    position: flex;
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 4%;
+    margin-left: 3%;
+    padding: 3% 0% 3% 0%;
+}
+.page_block_description{
+    font-size: 50px; 
+    margin-left:  4%;
+    display: flex;
+    align-items: center;
+}

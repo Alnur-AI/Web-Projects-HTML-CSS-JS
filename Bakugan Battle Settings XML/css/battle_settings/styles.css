@@ -1,0 +1,37 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+}
+
+
+
+.pre_page_buttons{
+    background-color: #aeaeae;
+    font-size: 40px;
+    border-radius: 13px;
+    position: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.constant_option{
+    margin-left:  2%;
+    margin-bottom: 1%;
+    font-size: 30px;
+    
+}
