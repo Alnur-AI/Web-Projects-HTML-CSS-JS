@@ -1,3 +1,9 @@
+HOW TO OPEN:
+
+in WEB FINAL: jsonserver –-path Database/db.json  --port 3000
+First open jsonserver, then index.html
+
+
 Before using the program, it must be unzipped for js to work correctly
 
 This program contains:
