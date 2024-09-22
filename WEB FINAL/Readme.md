@@ -4,6 +4,13 @@ At the time of reporting, according to subjective perception, the task was compl
 1) json-server --port 3000 Data/db.json  
 2) open index.html with liveserver
 
+# Screenshots
+![Authorization](https://github.com/Alnur-AI/Web-Projects-HTML-CSS-JS/blob/Screenshots/Authorization.png?raw=true)
+![alt text](https://github.com/Alnur-AI/Web-Projects-HTML-CSS-JS/blob/Screenshots/Home.png?raw=true)
+![alt text](https://github.com/Alnur-AI/Web-Projects-HTML-CSS-JS/blob/Screenshots/article-editing.png?raw=true)
+![alt text](https://github.com/Alnur-AI/Web-Projects-HTML-CSS-JS/blob/Screenshots/Home-article.jpg?raw=true)
+![alt text](https://github.com/Alnur-AI/Web-Projects-HTML-CSS-JS/blob/Screenshots/new-article.jpg?raw=true)
+
 # The following types of work were carried out:
 
 1) The html, css format contained in the figma prototype was completely recreated, located at the following link: https://www.figma.com/design/S2XdLxDJu9A1N3jcrIsyMh/Group-16-Term-Web-Project?m=dev&node-id= 0%3A1&t=lEBOh2HkiVk8PYjM-1
