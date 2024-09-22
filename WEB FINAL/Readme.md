@@ -123,7 +123,7 @@ Instructions for Basic Authentication Using JSON-Server
   	else{
     		toastr.error("Wrong username or password!");
     	return;
-     ```
+```
 ## 6. Store Session Information 
 If authentication is successful, use either `localStorage` or `sessionStorage` to store session information. Store relevant session data such as the user's ID or username. 
 ```
@@ -142,7 +142,7 @@ If authentication is successful, use either `localStorage` or `sessionStorage` t
 		window.location.href='./Pages/home.html'
 ```
 	In new_article.js
- ```
+```
 	document.querySelector('.fa-paper-plane').closest('.article_button').addEventListener('click', 		(e) => {
 		e.preventDefault();
  		publishArticle();
