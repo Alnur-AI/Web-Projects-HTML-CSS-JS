@@ -1,10 +1,10 @@
-## How to open
+# How to open
 
 At the time of reporting, according to subjective perception, the task was completed by 95%. 
 1) json-server --port 3000 Data/db.json  
 2) open index.html with liveserver
 
-## The following types of work were carried out:
+# The following types of work were carried out:
 
 1) The html, css format contained in the figma prototype was completely recreated, located at the following link: https://www.figma.com/design/S2XdLxDJu9A1N3jcrIsyMh/Group-16-Term-Web-Project?m=dev&node-id= 0%3A1&t=lEBOh2HkiVk8PYjM-1
 
@@ -22,7 +22,7 @@ Designed by Carson Monroe</a>
 
 2.5) The main and secondary colors were used #ffffff and #bdbdbd respectively. Black color was used exclusively for text. Also, to highlight information, bright colors were used, which did not merge with the white background due to the strong brightness.
 
-## What work still needs to be done:
+# What work still needs to be done:
 
 1) Improve the visual style of the navbar
 2) Perhaps start storing photos in the database in base64 format (I avoided this method because the string size was too large)
@@ -32,35 +32,35 @@ Designed by Carson Monroe</a>
 
 # Work that was complited after Deliverable #2: 
 
-1. Overview: - In this part Your project must be functional i.e everything is working perfectly
+## 1. Overview: - In this part Your project must be functional i.e everything is working perfectly
 	1.1 You can login, register in index.html page (registration.js)
 	1.2 You can CRUD every post if you write it (sessionUsername and postUsername should 	be equal)
 	1.3 You can open every page in site
-2. File Structure:
+## 2. File Structure:
 	2.1 Used recommended file structure 
-3. JS Instructions:
+## 3. JS Instructions:
 	3.1 Used json-server –-watch ./db.json  in port 3000
 	3.2 Used fetch api from javascript for CRUD 
 	(article.js, registration.js, parse_json.js, new_article.js)
 
-# CREATE
+## CREATE
 ```
 async function saveDatabase(username, password) {}
 async function publishArticle(){}
 async function loadDatabase() {}
 ```
-# UPDATE
+## UPDATE
 ```
 async function handleEditButtonClick(postId) {}
 ```
-# DELETE
+## DELETE
 ```
 async function handleDeleteButtonClick(postId) {}
 ```
 ## AUTHENTICATION 
 Instructions for Basic Authentication Using JSON-Server 
 
-# 4. Handle Form Submission
+## 4. Handle Form Submission
 4.1 Write JavaScript to capture the form's submit event.
 	In index.html:
 ```
@@ -99,7 +99,7 @@ Instructions for Basic Authentication Using JSON-Server
 	registerForm.addEventListener("submit", (e) => {
 		registerAccount(username, encrypt(password));
 ```
-# 5. Perform Authentication Check
+## 5. Perform Authentication Check
 5.1 Send a GET request to the JSON-Server to retrieve the list of users.
    ```
 	async function loadDatabase()
@@ -124,14 +124,14 @@ Instructions for Basic Authentication Using JSON-Server
     		toastr.error("Wrong username or password!");
     	return;
      ```
-# 6. Store Session Information 
+## 6. Store Session Information 
 If authentication is successful, use either `localStorage` or `sessionStorage` to store session information. Store relevant session data such as the user's ID or username. 
 ```
 	sessionStorage.setItem("Username", username);
    	sessionStorage.setItem("UserID", account.id);
 	database = JSON.parse(localStorage.getItem("database"));
 ```
-# 7. Access Protected Content
+## 7. Access Protected Content
 7.1 Use the stored session data to manage user access to protected pages or content.
 	- You can’t access “new_atricle.html” legally if you are enter on site as a guest
 	- You can’t edit or delete other’s posts in “article.html”. Only your own posts
@@ -148,7 +148,7 @@ If authentication is successful, use either `localStorage` or `sessionStorage` t
  		publishArticle();
  		window.location.href='./home.html';
 ```
-# 8. Handle Authentication Failures 
+## 8. Handle Authentication Failures 
 8.1 If authentication fails, display an error message to the user.
 8.2 Ensure the form is ready for the user to try logging in again.
    ```
@@ -161,7 +161,7 @@ If authentication is successful, use either `localStorage` or `sessionStorage` t
 		toastr.error("Name of user is already used");
 ```
 
-# 9 End Session
+## 9 End Session
 9.1 Implement functionality to clear the session information from `localStorage` or `sessionStorage` when the user logs out.
 	In registration.js
 	document.addEventListener("DOMContentLoaded", function() {
