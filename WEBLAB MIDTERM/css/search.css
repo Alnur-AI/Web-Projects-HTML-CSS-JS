@@ -1,0 +1,36 @@
+
+
+
+.search-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Максимальная ширина поисковой формы */
+  }
+  
+  .search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-right: 5px;
+    width: 300px; /* Увеличение ширины до 300px */
+    border: 1px solid #ddd;
+    border-radius: 24px 0 0 24px; /* Скругление слева */
+    outline: none;
+    background-color: #fdfdf8;
+  }
+  
+  .search-container button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 0 24px 24px 0; /* Скругление справа */
+    outline: none;
+  }
+  
+  .search-container button:hover {
+    background-color: #e8e8e8;
+  }
+  
+  

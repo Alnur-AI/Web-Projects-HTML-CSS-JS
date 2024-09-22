@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Указываем путь к вашему CSS файлу -->
+    <link rel="stylesheet" href="./css/search.css"> <!-- Указываем путь к вашему CSS файлу -->
+    <link rel="stylesheet" href="./css/footer.css"> <!-- Указываем путь к вашему CSS файлу -->
+    <link rel="stylesheet" href="./css/dropdown.css"> <!-- Указываем путь к вашему CSS файлу -->
+    <link rel="stylesheet" href="./css/griditem.css"> <!-- Указываем путь к вашему CSS файлу -->
+    <link rel="stylesheet" href="./css/modal.css"> <!-- Указываем путь к вашему CSS файлу -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo__area">
+			<img src="./img/logo.png" alt="To-Do-List Logo" style="height: 50px;">
+			<h3>To-Do-List</h3>
+		</div>
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <nav>
+            <ul class="nav__lists">
+                <li class="nav__list" title="Add task">
+                    <i class="fa fa-plus" aria-hidden="true" onclick="toggleForm()"></i>
+                </li>
+                <li class="nav__list" title="List view">
+                    <i class="fa fa-th-list" aria-hidden="true" onclick="toggleList()"></i>
+                </li>
+                <li class="nav__list" title="Grid view">
+                    <i class="fa fa-th-large" aria-hidden="true" onclick="toggleGrid()"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <!-- Содержимое модального окна -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Add Task</h2>
+            </div>
+            <div class="modal-body">
+                <div id="iconSelection">Category:</div> <!-- Иконки будут добавлены динамически -->
+                <div>
+                    <label>Title:</label>
+                    <input type="text" id="taskTitle">
+                </div>
+                <div>
+                    <label>Description:</label>
+                    <input type="text" id="taskDescription">
+                </div>
+                <div>
+                    <label>Time:</label>
+                    <input type="time" id="taskTime">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="applyButton" data-action="add">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="controlGrid">
+        <div class="status-display">All</div> <!-- Элемент для текста статуса -->
+        <div class="grid-adjustment">
+            <span>Adjust Grid</span>
+            <button class="grid-minus">-</button>
+            <button class="grid-plus">+</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Filter</button>
+            <div class="dropdown-content">
+              <a href="#">All</a>
+              <a href="#">Complete</a>
+              <a href="#">Incomplete</a>
+            </div>
+        </div>
+    </div>
+
+	
+
+
+	</body>
+
+
+
+    <div class="content-block">
+        <div class="grid-container">
+        
+        <!-- JavaScript-->    
+              
+        </div>
+    </div>
+    
+    
+    
+
+    <footer>
+        <div class="footer-left">
+            <p>Copyright ©2024 All rights reserved. Itec 447 Web Development.</p>
+        </div>
+        <div class="footer-right">
+            <ul class="social__links">
+                <li class="link">
+                    <a href="https://github.com/Alnur-AI" target="_blank">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://github.com/Alnur-AI" target="_blank">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://github.com/Alnur-AI" target="_blank">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://github.com/Alnur-AI" target="_blank">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://github.com/Alnur-AI" target="_blank">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

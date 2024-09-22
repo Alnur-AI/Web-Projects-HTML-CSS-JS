@@ -1,0 +1,115 @@
+
+
+
+.content-block {
+    margin: 10px; /* Отступ 10px со всех сторон */
+    border: 2px solid darkgray; /* Темно-серая обводка */
+    border-radius: 5px; /* Скругленные углы */
+    background-color: beige; /* Бежевый фон */
+    box-sizing: border-box; /* Граница и padding включены в ширину и высоту */
+    /* Вы можете задать высоту блока, если это необходимо */
+    height: auto; /* Автоматическая высота в зависимости от содержимого, можно заменить на конкретное значение */
+  }
+  .grid-container {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fill, minmax(calc(10% - 10px), 1fr));  Создание колонок с учетом отступов */
+    grid-template-columns: repeat(6, 1fr); /* Изначально 6 элементов на строку */
+    justify-content: space-around; /* Распределяет элементы равномерно, включая пространство по краям */
+    gap: 10px; /* Отступы между блоками сетки */
+    padding: 20px; /* Отступ от краев контейнера */
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #b8b8aa;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.5s ease-out;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Добавляем анимацию для прозрачности и трансформации */
+  }
+  .grid-item.complete {
+    background-color: rgb(97, 173, 75); /* Зеленый фон для завершенных задач */
+  }
+  .grid-item.incomplete {
+      background-color: #b8b8aa; /* Цвет фона по умолчанию для незавершенных задач */
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* Класс для анимации элементов */
+  .grid-item-changing {
+      opacity: 0.5; /* Делаем элементы полупрозрачными */
+      transform: scale(0.95); /* Немного уменьшаем размер */
+  }
+
+
+
+
+
+  
+  .task-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .task-controls i {
+    cursor: pointer; /* Показывает, что элемент кликабельный */
+    color: #000; /* Начальный цвет иконок */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+  }
+  
+  .task-controls i:hover {
+    color: #19beff; /* Синий цвет при наведении */
+  }
+  .task-controls i.fa-minus-circle:hover {
+    color: #ff4747; /* Красный цвет при наведении */
+  }
+  .task-controls i.fa-check-circle:hover {
+    color: #1eb300; /* Красный цвет при наведении */
+  }
+  .task-controls i.fa-pen:hover {
+    color: #c59700; /* Красный цвет при наведении */
+  }
+  
+  
+  .task-icon {
+    display: flex;
+    justify-content: center;
+    font-size: 64px; /* Размер иконки */
+  }
+  
+  .task-title {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .task-description {
+    background-color: #7c7c79;
+    color: #7c7c79;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.5s ease, background-color 0.5s ease; /* Добавляем анимацию изменения цвета */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .task-description:hover {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .task-time {
+    position: absolute;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+  }

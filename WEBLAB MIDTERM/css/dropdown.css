@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+/* Основной стиль для кнопки */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 160px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Контейнер для выпадающего меню */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Контент выпадающего меню */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    margin-left: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Убедитесь, что это значение положительное и достаточное, чтобы опустить вниз */
+  }
+  .dropdown, .grid-adjustment {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между внутренними элементами */
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Стили для ссылок в меню */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Изменение фона ссылок при наведении */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Отображение выпадающего меню при наведении */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Изменение фона кнопки при наведении */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  

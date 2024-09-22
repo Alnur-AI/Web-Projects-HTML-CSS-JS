@@ -1,0 +1,50 @@
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fafaec;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left p, .footer-left a {
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 1rem;
+}
+
+.social__links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.link i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.link i.fa-github:hover {
+    color: #cabd00; /* Синий цвет при наведении */
+}
+.link i.fa-instagram:hover {
+    color: #ca00b6; /* Синий цвет при наведении */
+}
+.link i.fa-facebook:hover {
+    color: #005bca; /* Синий цвет при наведении */
+}
+.link i.fa-twitter:hover {
+    color: #19beff; /* Синий цвет при наведении */
+}
+.link i.fa-youtube:hover {
+    color: #ca2500; /* Синий цвет при наведении */
+}
+.link i {
+  color: #000; /* Начальный цвет иконки, здесь черный */
+  transition: color 0.3s; /* Плавное изменение цвета */
+}

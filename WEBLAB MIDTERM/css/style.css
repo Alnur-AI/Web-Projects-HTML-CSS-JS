@@ -1,0 +1,124 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafaec;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fafaec;
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo__area {
+    display: flex;
+    align-items: center;
+}
+
+.logo__area img {
+    margin-right: 10px; /* Добавляет отступ справа от логотипа */
+}
+
+.logo__area h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.nav__lists {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.nav__list i {
+  color: #000; /* Начальный цвет иконки, здесь черный */
+  transition: color 0.3s; /* Плавное изменение цвета */
+}
+
+.nav__list:hover i {
+  color: #007bff; /* Синий цвет при наведении */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.controlGrid {
+  display: flex;
+  justify-content: space-between; /* Выравнивание элементов по правому краю */
+  align-items: center; /* Центрирование элементов по вертикали */
+  gap: 20px; /* Расстояние между элементами внутри контейнера */
+}
+
+.grid-adjustment span, .grid-adjustment button {
+  margin: 0 5px;
+  font-size: 16px;
+  font-style: oblique ;
+}
+
+
+.grid-minus, .grid-plus {
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.grid-minus:hover, .grid-plus:hover {
+  background-color: #e0e0e0;
+}
+
+.status-display {
+  flex-grow: 1; /* Позволяет элементу занять все доступное пространство слева */
+  margin-left: 12px;
+  font-size: 18px;
+}
+.grid-adjustment,
+.dropdown {
+    flex-grow: 0; /* Предотвращает растягивание этих элементов */
+}
+

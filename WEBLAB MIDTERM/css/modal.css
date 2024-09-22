@@ -1,0 +1,65 @@
+/* Стиль модального окна */
+.modal {
+    display: none; /* Скрыть модальное окно по умолчанию */
+    position: fixed; /* Оставаться на месте при прокрутке */
+    z-index: 1; /* Сидеть на верху */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); /* Цвет фона */
+    background-color: rgba(0,0,0,0.4); /* Цвет фона с небольшой прозрачностью */
+
+}
+
+/* Стиль содержимого модального окна */
+.modal-content {
+    border-radius: 10px;
+    background-color: #fefefe;
+    margin: 15% auto;  /*15% от верха и по центру */
+    padding: 20px;
+    border: 1px solid #150909;
+    border-width: 2px ;
+    width: 75%; /* Можно регулировать ширину */
+    font-size: 24px; /* Увеличиваем базовый размер текста в модальном окне */
+}
+input[type="text"], input[type="time"], button {
+    font-size: 1.2em; /* Увеличиваем размер шрифта для полей ввода и кнопок */
+    padding: 10px; /* Добавляем больше отступа внутри полей ввода и кнопок для лучшей видимости */
+}
+
+
+/* Кнопка закрыть (x) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Основной стиль для иконок */
+.fas {
+    font-size: 24px !important; /* Увеличиваем размер иконок */
+    margin-right: 15px; /* Увеличиваем отступ справа для иконок */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Плавное изменение */
+}
+
+/* Стиль для эффекта свечения при наведении */
+.fas:hover {
+    color: red; /* Цвет иконки при наведении */
+    text-shadow: 0 0 5px red; /* Эффект свечения */
+}
+/* Стиль для подсветки активной иконки */
+.fas.active {
+    color: #4CAF50; /* Зеленый цвет для активной иконки */
+    text-shadow: 0 0 8px #4CAF50; /* Эффект свечения для активной иконки */
+}
+
