@@ -14,10 +14,10 @@ At the time of reporting, according to subjective perception, the task was compl
 2.3) Functioning nav_bar and other interactive interface elements
 2.4) Animated wallpapers from the following authors were used:
 
-BACKGROUND LOGIN SOURCE 6) Basic Landscape Background Animation
+2.4.1) BACKGROUND LOGIN SOURCE 6) Basic Landscape Background Animation
 https://alvarotrigo.com/blog/animated-backgrounds-css/
 
-NAVBAR ORIGINAL <a href="https://dribbble.com/shots/5844983-Sub-Nav-Interaction-Concept" class="signature" target="_blank">
+2.4.2) NAVBAR ORIGINAL <a href="https://dribbble.com/shots/5844983-Sub-Nav-Interaction-Concept" class="signature" target="_blank">
 Designed by Carson Monroe</a>
 
 2.5) The main and secondary colors were used #ffffff and #bdbdbd respectively. Black color was used exclusively for text. Also, to highlight information, bright colors were used, which did not merge with the white background due to the strong brightness.
@@ -44,20 +44,23 @@ Designed by Carson Monroe</a>
 	(article.js, registration.js, parse_json.js, new_article.js)
 
 # CREATE
+```
 async function saveDatabase(username, password) {}
 async function publishArticle(){}
 async function loadDatabase() {}
-
+```
 # UPDATE
+```
 async function handleEditButtonClick(postId) {}
-
+```
 # DELETE
+```
 async function handleDeleteButtonClick(postId) {}
-
-# AUTHENTICATION 
+```
+## AUTHENTICATION 
 Instructions for Basic Authentication Using JSON-Server 
 
-4. Handle Form Submission
+# 4. Handle Form Submission
 4.1 Write JavaScript to capture the form's submit event.
 	In index.html:
 ```
@@ -65,15 +68,17 @@ Instructions for Basic Authentication Using JSON-Server
 	<button onclick="toggleForms('registerForm')">Register</button>
 	<form id="registerForm" class="form" style="display: none;">
 	<button type="submit" id = "submitLog">Register now!</button>
-
+```
 4.2 Prevent the default form submission behavior to handle it with JavaScript
 	In registration.js:
+ ```
 	registerForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 	loginForm.addEventListener("submit", (e) => {
 	e.preventDefault();
-	
+```	
 4.3 Try encoding with base64 or any other one available.
+```
 	function encrypt(plainText) {
 		let key = "key";
  		let encrypted = CryptoJS.AES.encrypt(plainText, key);
@@ -84,19 +89,23 @@ Instructions for Basic Authentication Using JSON-Server
  		let decrypted = CryptoJS.AES.decrypt(encryptedText, key);
  		console.log( decrypted.toString(CryptoJS.enc.Utf8));
  		return decrypted.toString(CryptoJS.enc.Utf8);
-
+```
 4.4 Find a way to hash the user password before saving to database (Security)
+```
 	function loginAccount(username, password) {
 		const account = database.accounts.find(accounts => 
 		accounts.username === username 		
 		&& decrypt(accounts.password) === password);
 	registerForm.addEventListener("submit", (e) => {
 		registerAccount(username, encrypt(password));
-5. Perform Authentication Check
+```
+# 5. Perform Authentication Check
 5.1 Send a GET request to the JSON-Server to retrieve the list of users.
+   ```
 	async function loadDatabase()
-
+```
 5.2 Verify the submitted username and password against the user data from the server.
+```
 	function loginAccount(username, password) {
 	  const account = database.accounts.find(accounts => 
 		accounts.username === username && 	
@@ -114,27 +123,35 @@ Instructions for Basic Authentication Using JSON-Server
   	else{
     		toastr.error("Wrong username or password!");
     	return;
-6. Store Session Information 
+     ```
+# 6. Store Session Information 
 If authentication is successful, use either `localStorage` or `sessionStorage` to store session information. Store relevant session data such as the user's ID or username. 
+```
 	sessionStorage.setItem("Username", username);
    	sessionStorage.setItem("UserID", account.id);
 	database = JSON.parse(localStorage.getItem("database"));
-7. Access Protected Content
+```
+# 7. Access Protected Content
 7.1 Use the stored session data to manage user access to protected pages or content.
 	- You can’t access “new_atricle.html” legally if you are enter on site as a guest
 	- You can’t edit or delete other’s posts in “article.html”. Only your own posts
 7.2 Redirect the user to a protected page or display a success message upon successful login
 	In registration.js
+```
 	function loginAccount(username, password)
 		window.location.href='./Pages/home.html'
+```
 	In new_article.js
+ ```
 	document.querySelector('.fa-paper-plane').closest('.article_button').addEventListener('click', 		(e) => {
 		e.preventDefault();
  		publishArticle();
  		window.location.href='./home.html';
-8. Handle Authentication Failures 
+```
+# 8. Handle Authentication Failures 
 8.1 If authentication fails, display an error message to the user.
-8.2 Ensure the form is ready for the user to try logging in again. 
+8.2 Ensure the form is ready for the user to try logging in again.
+   ```
 	function loginAccount(username, password) {
 		toastr.error("Please, fill out all required fields");
 		toastr.error("Wrong username or password!");
@@ -142,9 +159,9 @@ If authentication is successful, use either `localStorage` or `sessionStorage` t
 		toastr.error("Please, fill out username field");
 		toastr.error("Please, fill out password field");
 		toastr.error("Name of user is already used");
+```
 
-
-9. End Session
+# 9 End Session
 9.1 Implement functionality to clear the session information from `localStorage` or `sessionStorage` when the user logs out.
 	In registration.js
 	document.addEventListener("DOMContentLoaded", function() {
