@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authorization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style/index_styles.css">
+  <link rel="stylesheet" href="Style/bg_reg_login.css">
+  
+</head>
+<body>
+
+  
+
+  <div id = "login" class="container" >
+    
+    <div class="logreg_logo">
+      Learn.me
+    </div>
+
+    <div class="logreg_text">
+      Standing on the shoulders of giants
+    </div>
+
+  <form id="loginForm" class="form">
+      <div class="input-container">
+          <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" >
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" >
+      </div>
+      <div class="button-container">
+          <button onclick="toggleForms('registerForm')">Register</button>
+          <button type="submit" id = "submitReg">Login!</button>
+      </div>
+  </form>
+  
+  <form id="registerForm" class="form" style="display: none;">
+      <div class="input-container">
+          <input type="text" id="registerUsername" name="registerUsername" placeholder="Username" >
+          <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" >
+      </div>
+      <div class="button-container">
+          <button type="submit" id = "submitLog">Register now!</button>
+          <button onclick="toggleForms('loginForm')">Sign in</button>
+      </div>
+  </form>
+    
+
+
+    <button onclick="enterAsGuest()" type="guest">Enter as a guest </button>
+
+  </div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="JS/registration.js"></script>
+</body>
+</html>

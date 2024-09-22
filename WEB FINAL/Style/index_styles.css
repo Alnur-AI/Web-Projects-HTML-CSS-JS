@@ -1,0 +1,79 @@
+/*npx json-server db/db.json */
+
+body {
+  font-family: 'Roboto', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display:block;
+  text-align: center; 
+  border-radius: 33px;
+  scale: 1.5;
+}
+
+
+.logreg_logo{
+  font-family: 'Pacifico';
+  font-size: 40px;
+}
+.logreg_text{
+  
+  color: #5c5c5c;
+  font-size: 20px;
+}
+
+
+.form{
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-container input[type="text" ] {
+  margin-top: 10px;
+}
+.input-container input {
+  width: 80%;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;  
+  margin: 0 10%;
+  width: 80%;
+}
+
+.button-container button {
+  border-radius: 33px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.button-container button:hover {
+  opacity: 0.7;
+}
+
+
+button[type="guest"] {
+  border-radius: 33px;
+}
+button:hover{
+  opacity: 0.7;
+}
+
+

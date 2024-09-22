@@ -1,0 +1,501 @@
+
+
+body {
+  height: 100%;
+}
+@media (min-width: 800px) {
+ 
+  .sign_sosog {
+    margin-top: 100px;
+    width: 60%;
+    height: 300px;
+    background-image: url('../assets/sosog.jpg');
+    background-size: cover;
+    transition: background-position 0.5s ease;
+    font-size: 5vw;
+    font-family: 'Roboto';
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.0);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .sing_sosog_text {
+    position: sticky; 
+    top: 8%; 
+}
+  .quote {
+    margin-top: 2%;
+    width: 60%;
+    height: auto;
+    background-color: #bdbdbd;
+    background-size: cover;
+    transition: background-position 0.5s ease;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 15px;
+  }
+  .quote_head{
+    font-size: 5vw;
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .quote_body{
+    font-size: 3vw;
+    font-family: "Send Flowers", cursive;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+.page_describe{
+  margin-top: 2%;
+  margin-left: 10%;
+  font-size: 4vw;
+  display: block;
+  align-self: flex-start;
+  font-size: 30px;
+}
+.line {
+  position: relative;
+  width: 80%;
+  height: 1px; 
+  background-color: black; 
+}
+
+.page_information{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 30px;
+  font-size: 1.3vw;
+    width: 60%;
+    height: auto;
+    background-color: #bdbdbd;
+    background-size: cover;
+    transition: background-position 0.5s ease;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+footer {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #bdbdbd;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left p, .footer-left a {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 1rem;
+}
+
+.social__links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.link i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.link i.fa-github:hover {
+  color: #cabd00; 
+}
+.link i.fa-instagram:hover {
+  color: #ca00b6; 
+}
+.link i.fa-facebook:hover {
+  color: #005bca; 
+}
+.link i.fa-twitter:hover {
+  color: #19beff;
+}
+.link i.fa-youtube:hover {
+  color: #ca2500; 
+}
+.link i {
+color: #000; 
+transition: color 0.3s; 
+}
+
+
+#posts-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.article{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 60%;
+  background-color: #bdbdbd;
+  border-radius: 13px;
+}
+.article_name{
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 3vw;
+  font-family: 'Roboto';
+}
+.article_tag{
+  margin-left: 3.5%;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4vw;
+
+}
+.article_image{
+  font-family: 'Roboto';
+  width: 96%;
+  max-width: 60vw;
+  height: 250px;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  overflow: hidden;
+  border-radius: 15px;
+    
+  .article_image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+  }
+}
+.article_body{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  font-style: normal;
+  text-indent: 20px;
+}
+
+.article_footer {
+  scale: 110vw;
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+  white-space: nowrap;
+  margin-bottom: 2%;
+  justify-content: space-between;
+
+  .left-section {
+    display: flex;
+    
+    margin-left: 2%;
+    align-items: center;
+  }
+  .right-section {
+    display: flex;
+    
+    
+    margin-right: 5%;
+    align-items: center; 
+  }
+  
+  .left-section i, .right-section i {
+    margin-right: 5px; 
+  }
+
+  .article_button{
+    border-radius: 8px;
+    margin-right: 3%;
+    padding: 10px;
+    background-color: #d9d9d9;
+    
+  }
+  .article_button i.fa-heart{
+    color:#ff4d25;
+  }
+  .article_button i.fa-share{
+    color:#70acff;
+  }
+  .article_button i.fa-save{
+    color:#70acff;
+  }
+  .article_button i.fa-eraser{
+    color:#883316;
+  }
+  .article_button i.fa-paper-plane{
+    color:#2ec247;
+  }
+
+  .author_name{
+    font-weight: bold;
+  }
+
+  .article_views{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .sign_sosog {
+    margin-top: 200px;
+    width: 80%;
+    height: 500px;
+    background-image: url('../assets/sosog.jpg');
+    background-size: cover;
+    transition: background-position 0.5s ease;
+    font-size: 10vh;
+    font-family: 'Roboto';
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.0);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .sing_sosog_text {
+    position: sticky; 
+    top: 8%; 
+}
+  .quote {
+    margin-top: 2%;
+    width: 80%;
+    height: auto;
+    background-color: #bdbdbd;
+    background-size: cover;
+    transition: background-position 0.5s ease;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 15px;
+  }
+  .quote_head{
+    font-size: 9vh;
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .quote_body{
+    font-size: 9vh;
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.page_describe{
+  margin-top: 2%;
+  margin-left: 10%;
+  font-size: 4vw;
+  display: block;
+  align-self: flex-start;
+  font-size: 30px;
+}
+.line {
+  position: relative;
+  width: 80%;
+  height: 1px; 
+  background-color: black; 
+}
+
+.page_information{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 30px;
+  font-size: 1.3vw;
+    width: 80%;
+    height: auto;
+    background-color: #bdbdbd;
+    background-size: cover;
+    transition: background-position 0.5s ease;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+footer {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #bdbdbd;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left p, .footer-left a {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 1rem;
+}
+
+.social__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.link i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.link i.fa-github:hover {
+  color: #cabd00; 
+}
+.link i.fa-instagram:hover {
+  color: #ca00b6; 
+}
+.link i.fa-facebook:hover {
+  color: #005bca; 
+}
+.link i.fa-twitter:hover {
+  color: #19beff;
+}
+.link i.fa-youtube:hover {
+  color: #ca2500; 
+}
+.link i {
+color: #000; 
+transition: color 0.3s; 
+}
+
+
+#posts-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.article{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 80%;
+  background-color: #bdbdbd;
+  border-radius: 13px;
+}
+.article_name{
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 7vh;
+  font-family: 'Roboto';
+}
+.article_tag{
+  margin-left: 3.5%;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vh;
+
+}
+.article_image{
+  font-family: 'Roboto';
+  width: 100%;
+  max-width: 76vw;
+  height: 250px;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  overflow: hidden;
+  border-radius: 15px;
+    
+  .article_image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+  }
+}
+.article_body{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-size: 4vh;
+  font-style: normal;
+  text-indent: 20px;
+}
+
+.article_footer {
+  scale: 110vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+  white-space: nowrap;
+  margin-bottom: 2%;
+  justify-content: space-between;
+
+  .left-section {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 4%;
+    justify-content: center;
+  }
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    align-self: flex-start;
+  }
+  
+  .left-section i, .right-section i {
+    margin-right: 5px; 
+  }
+
+  .article_button{
+    border-radius: 8px;
+    margin-right: 3%;
+    padding: 10px;
+    background-color: #d9d9d9;
+    
+  }
+  .article_button i.fa-heart{
+    color:#ff4d25;
+  }
+  .article_button i.fa-share{
+    color:#70acff;
+  }
+  .article_button i.fa-save{
+    color:#70acff;
+  }
+  .article_button i.fa-eraser{
+    color:#883316;
+  }
+  .article_button i.fa-paper-plane{
+    color:#2ec247;
+  }
+
+  .author_name{
+    font-weight: bold;
+  }
+
+  .article_views{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  }
+}

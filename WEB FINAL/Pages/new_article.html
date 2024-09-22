@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authorization</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../Style/bg_main.css">
+  <link rel="stylesheet" href="../Style/nav_bar.css">
+  <link rel="stylesheet" href="../Style/page_core.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/10.32.0/css/jquery.fileupload.css">
+
+</head>
+<body>
+
+
+  
+  <nav class="navigationWrapper">
+    <div class="logoWrapper">
+      <span class="stylish">Learn.me</span>
+    </div>
+    <ul class="navigation">
+      <li class="parent"><a class="link" href="/Pages/home.html">Home</a></li>
+      <li class="parent"><a class="link" href="/Pages/about.html">About</a></li>
+      <li class="parent"><a class="link" href="/Pages/contact.html">Contact</a></li>
+      <li class="parent" id = "navNewPost"><a class="link" href="/Pages/new_article.html"><i class="fas fa-sticky-note"></i>&nbsp;</a></li>
+      <li class="parent" id="signin">
+        <a class="link" href="#" id = "navAccName"> Guest <i class="fas fa-user"></i></a>
+        <ul class="subnavigation">
+          <li><a class="link" id = "navSignInOut" href="../index.html">Sign In</a></li>
+          <li><a class="link" >Close</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="sign_sosog">
+    <selection>
+      <div class="sing_sosog_text">
+        Standing on the shoulders of giants
+      </div>
+    </selection>
+  </div>
+
+    <div class="quote">
+      <div class="quote_head">
+        Quote Of The Day
+      </div>
+      <div class="quote_body">
+      </div>
+    </div>
+
+    <div class="page_describe">
+      Create new post
+    </div>
+    <div class="line"></div>
+
+    
+
+    <div id="1" class="article">
+      <div class="article_name" contenteditable="true">
+          Title 
+      </div>
+      <div class="article_tag" contenteditable="true">
+          tag1, tag2
+      </div>
+      
+      <div class="article_image">
+        <img src="../assets/world_doctor.jpg" id="article-img" style="cursor: pointer;">
+        <br>
+        <form id="fileupload" action="/path/to/upload/handler/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="files[]" id="image-input" style="display: none;">
+            <div id="files" class="files"></div>
+            <button type="submit" style="display: none;"></button>
+        </form>
+      </div>
+      
+      <div class="article_body" >
+          <p contenteditable="false"><strong>Introduction:&nbsp;</strong><div class="article_intro" contenteditable="true">Sample text</div></p>
+          <p contenteditable="false"><strong>Article:&nbsp;</strong><div class="article_main" contenteditable="true">Sample text</div></p>
+      </div>
+      <div class="article_footer">
+          <div class="left-section">
+          </div>
+          <div class="right-section">
+              <div class="article_button">
+                  <i class="fas fa-save"></i> Save
+              </div>
+              <div class="article_button">
+                  <i class="fas fa-paper-plane"></i> Publish
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    
+    <footer>
+      <div class="footer-left">
+          <p>Copyright ©2024 All rights reserved. 
+            Itec 447 Web Development.</p>
+      </div>
+      <div class="footer-right">
+          <ul class="social__links">
+              <li class="link">
+                  <a href="https://github.com/Alnur-AI" target="_blank">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+              </li>
+              <li class="link">
+                  <a href="https://github.com/Alnur-AI" target="_blank">
+                      <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+              </li>
+              <li class="link">
+                  <a href="https://github.com/Alnur-AI" target="_blank">
+                      <i class="fab fa-facebook" aria-hidden="true"></i>
+                  </a>
+              </li>
+              <li class="link">
+                  <a href="https://github.com/Alnur-AI" target="_blank">
+                      <i class="fab fa-twitter" aria-hidden="true"></i>
+                  </a>
+              </li>
+              <li class="link">
+                  <a href="https://github.com/Alnur-AI" target="_blank">
+                      <i class="fab fa-youtube" aria-hidden="true"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="../JS/quote_generator.js"></script>
+  <script src="../JS/scrolling_sosog.js"></script>
+  <script src="../JS/nav_bar.js"></script>
+  <script src="../JS/new_article.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+/*
+<a href="https://dribbble.com/shots/5844983-Sub-Nav-Interaction-Concept" class="signature" target="_blank">
+Designed by Carson Monroe</a>
+*/
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+
+  
+    .signature {
+      font-style: italic;
+      font-size: 20px;
+      color: #212121;
+      padding-top: 15px;
+      transition: all 0.3s ease-in-out;
+      
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  
+  .navigationWrapper {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #bdbdbd;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    color: rgb(0, 0, 0);
+    width: 100%;
+  
+    .logoWrapper {
+      display: flex;
+      margin-left: 2%;
+      .stylish {
+        font-size: 20px;
+        font-family: 'Pacifico', sans-serif;
+        font-weight: 500;
+      }
+  
+      .logo {
+        padding-left: 4px;
+        color: #ea4f4c;
+      }
+    }
+  
+    @media (max-width: 500px) {
+      .navigation {
+        flex-direction: column;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin-right: 2%;
+  
+      li {
+        
+        opacity: 1;
+        list-style-type: none;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      .parent {
+        background-color: #d9d9d9;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 7px;
+        padding: 3px 10px;
+        margin-left: 3px;
+        cursor: pointer;
+  
+        .link {
+          position: relative;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          color: rgb(0, 0, 0);
+  
+          &:hover {
+            color: #d81f1b;
+          }
+  
+          .fa-minus {
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            position: absolute;
+            left: -16px;
+            top: 3px;
+          }
+  
+          .fa-plus {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
+  
+          .fas {
+            
+            scale: 1.4;
+            color: #000000;
+            margin: 0px 5px 0px 10px;
+            font-size: 10px;
+            transition: all 0.3s ease-in-out;
+          }
+          .fas:hover {
+            color: #ea4f4c;
+          }
+  
+        }
+      }
+  
+      .subnavigation {
+        display: none;
+        list-style-type: none;
+        width: 100px;
+        position: absolute;
+        top: 40%;
+        left: 125%;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #bdbdbd;
+        flex-direction: column;
+  
+        li a {
+          font-size: 17px;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  
+  .active.parent {
+    transform: translate(0, 0);
+    .link {
+      font-size: 12px;
+  
+      .fa-minus {
+        opacity: 1 !important;
+        font-size: 8px;
+      }
+  
+      .fa-plus {
+        opacity: 0 !important;
+      }
+    }
+  
+    .subnavigation {
+      display: flex;
+    }
+  }
+  
+  .active#clients {
+    .subnavigation {
+      transform: translate(-150px, 17px);
+    }
+  }
+  
+  .active#signin {
+    .subnavigation {
+      transform: translate(-150px, 17px);
+    }
+  }
+  
+  .invisible {
+    opacity: 0 !important;
+    transform: translate(50px, 0);
+  }
