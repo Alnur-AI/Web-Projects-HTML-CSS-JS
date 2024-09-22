@@ -164,12 +164,16 @@ If authentication is successful, use either `localStorage` or `sessionStorage` t
 ## 9 End Session
 9.1 Implement functionality to clear the session information from `localStorage` or `sessionStorage` when the user logs out.
 	In registration.js
+ ```
 	document.addEventListener("DOMContentLoaded", function() {
 		sessionStorage.removeItem("Username");
  		sessionStorage.removeItem("UserID");
  	async function loadDatabase() {
 		localStorage.removeItem("database");
+```
 9.2 Redirect the user to the login page or display a logout confirmation message.
 	In every page in navbar:
+```
 	<ul class="subnavigation">
  	<li><a class="link" id = "navSignInOut" href="../index.html">Sign In</a></li>
+```
